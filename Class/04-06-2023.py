@@ -12,12 +12,14 @@ from bs4 import BeautifulSoup
 #
 # soup.find('div',class_="className")
 
-for j in range(1,101):
-    url = f"https://www.flipkart.com/search?q=dell&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page={j}"
-    response = requests.get(url)
-    # print(response)
-    html = BeautifulSoup(response.content,'html.parser')
-    t = html.find_all("div",class_="_4rR01T")
-    for i in t:
-        print(i.text)
+# for j in range(1,101):
+#     url = f"https://www.flipkart.com/search?q=dell&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page={j}"
+#     response = requests.get(url)
+#     # print(response)
+#     html = BeautifulSoup(response.content,'html.parser')
+#     t = html.find_all("div",class_="_4rR01T")
+#     for i in t:
+#         print(i.text)
+
+# network Interaction
 
