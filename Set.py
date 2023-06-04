@@ -1,0 +1,12 @@
+l = [10, 20, 30, 40]
+s = set(l)
+s.add(50)
+print(s, type(s))
+print(s.pop())
+print(s.remove(20))
+print(s)
+print(s.discard(30))
+print(s)
+s.clear()
+print(s)
+s.add(90)
